@@ -3,15 +3,16 @@
 
 int discount( int x ){
 
-    int y = x;
+    int y = x-(15 % 100);
     return y;
 }
 
 int main (void){
 
-    discount(get_int("x:"));
-    int z = y - 15/100;
-    printf("%i\n",x);
+    int z = discount(get_int("x:"));
+    printf("%i\n", z);
+
+
 
 
 }
