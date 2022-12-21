@@ -1,10 +1,16 @@
 #include <stdio.h>
 #include <cs50.h>
 
-void hello(int x){
-    printf("%i\n", x);
+int discount( int x ){
+
+    int z = x - 15/100;
+    return z;
 }
 
-int main(void){
-    hello(5);
+int main (void){
+
+    discount(get_int("x:"));
+    printf("%i\n",x);
+
+
 }
